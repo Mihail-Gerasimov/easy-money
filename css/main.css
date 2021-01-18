@@ -171,12 +171,12 @@ button:focus {
     width: 100%;
     margin: 0 auto;
     max-width: 1680px;
-    padding: 0px;
+    padding: 0 5px 0 5px;
 }
 
 @media (max-width: 1300px) {
     .container {
-        max-width: 992px;
+        max-width: 1300px;
         padding: 0 8px 0 8px;
     }
 }
@@ -206,7 +206,46 @@ button:focus {
 
 /* header */
 
-.header {}
+.header {
+    background: #2777D6;
+}
+
+.header-block {
+    height: 100px;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.header-btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 51px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    background: transparent;
+    padding: 18px 41px !important;
+    transition: 0.4s;
+}
+
+.header-btn:hover {
+    border: 2px solid #FFFFFF;
+    color: #2777D6;
+    background: #fff !important;
+    transition: 0.4s;
+}
+
+.header-btn:focus {
+    border: 2px solid #FFFFFF;
+    color: #2777D6;
+    background: #fff !important;
+    transition: 0.4s;
+}
 
 
 /* header */
@@ -215,7 +254,7 @@ button:focus {
 /* main */
 
 .main {
-    margin-top: 172px !important;
+    margin-top: 72px !important;
     margin-bottom: 75px !important;
 }
 
@@ -226,6 +265,14 @@ button:focus {
     margin-bottom: 70px;
     width: 810px;
     /* font-family: 'Gilroy-Bold'; */
+}
+
+.title-quiz::after {
+    position: absolute;
+    content: url(../img/main/orange-line.png);
+    display: table;
+    right: 150px;
+    bottom: -12px;
 }
 
 .bold-text {

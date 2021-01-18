@@ -7,25 +7,36 @@
     <title>Легкие деньги</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/gilroy.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
 
-    <section class="header"></section>
+    <section class="header">
+        <div class="container">
+            <div class="header-block d-flex justify-content-between align-items-center align-content-center">
+                <img src="./img/header/logo.png" alt="" class="header-logo">
+                <h3 class="header-title d-none d-md-block">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+                <button class="header-btn d-block p-0">Получить кредит</button>
+            </div>
+        </div>
+    </section>
 
     <section class="main">
         <div class="container">
 
-            <div class="big-quiz d-flex justify-content-between align-items-end">
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
 
                 <div class="choice">
 
                     <div class="poll-quiz--right d-flex flex-column">
-                        <h3 class="title-quiz"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
 
-                        <div class="progress-line d-flex">
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
                             <div class="progress-point progress-point__active"></div>
                             <div class="progress-point"></div>
                             <div class="progress-point"></div>
@@ -38,7 +49,9 @@
                             <div class="progress-point"></div>
                         </div>
 
-                        <h4 class="subtitle-quiz">Вам предварительно одобрили ставку 4% годовых. Готовы получить деньги?</h4>
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Сумма кредита?</h4>
 
                         <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
                             <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
@@ -59,14 +72,14 @@
                         </div>
 
                         <div class="quiz-bottim__block d-flex">
-                            <button class="quiz-back">Назад</button>
+                            <!-- <button class="quiz-back">Назад</button> -->
                             <button class="btn-further">Получить кредит</button>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="offer position-relative">
+                <div class="offer position-relative d-none d-sm-block">
                     <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
                     <div class="offer__facts d-flex flex-column">
                         <div class="offer__facts--block d-flex align-items-center">
@@ -87,6 +100,836 @@
                         <div class="offer__facts--block d-flex align-items-center">
                             <img class="block--little__images" src="./img/main/no-problem.png" alt="">
                             <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Как срочно нужен кредит?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>сегодня
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">от 1 до 3 дней
+                    </label>
+                            <label class="btn-quiz btn btn-secondary">
+                      <input type="radio" name="options" id="option3">от 3 до 7 дней
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2 ">
+                        <input type="radio" name="options" id="option4">нет срочности
+                      </label>
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Откуда Вы?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>Москва
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">Московская область
+                    </label>
+                            <label class="btn-quiz btn btn-secondary">
+                      <input type="radio" name="options" id="option3">Другой регион
+                    </label>
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Имеющиеся документы?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>Паспорт
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">Паспорт + 2-ой документ
+                    </label>
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Возраст?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>меньше 25 лет
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">от 25 до 55 лет
+                    </label>
+                            <label class="btn-quiz btn btn-secondary">
+                        <input type="radio" name="options" id="option2">большее 55 лет
+                      </label>
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Цель кредита?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>потребительские расходы
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">автомобиль
+                    </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                        <input type="radio" name="options" id="option2">рефинансирование имеющихся кредитов
+                      </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                        <input type="radio" name="options" id="option2">другое
+                      </label>
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point "></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">В каком формате хотите оформление?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>в банке
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">у частных инвесторов
+                    </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                        <input type="radio" name="options" id="option2">под залог
+                      </label>
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Вам предварительно одобрили ставку 4% годовых. Готовы получить деньги?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-2 mr-3">
+                      <input type="radio" name="options" id="option1" checked>в банке
+                    </label>
+                            <label class="btn-quiz btn btn-secondary mb-2">
+                      <input type="radio" name="options" id="option2">у частных инвесторов
+                    </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                        <input type="radio" name="options" id="option2">под залог
+                      </label>
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big-quiz d-flex justify-content-between align-items-end">
+
+                <div class="choice">
+
+                    <div class="poll-quiz--right d-flex flex-column">
+                        <h3 class="title-quiz position-relative d-none d-sm-block"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span> ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <h3 class="title-quiz--one d-block d-sm-none"><span class="bold-text">ПОЛУЧИТЕ</span> <span class="bold-text__orange">100%</span> <span class="bold-text">ОДОБРЕНИЕ ПО СТАВКЕ ОТ</span> <span class="bold-text__orange">4%</span></h3>
+                        <h3 class="title-quiz d-block d-sm-none position-relative">ДАЖЕ С ПЛОХОЙ КРЕДИТНОЙ ИСТОРИЕЙ! БЕЗ ПРЕДОПЛАТЫ!</h3>
+
+                        <div class="progress-line d-none d-sm-flex">
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point progress-point__active"></div>
+                            <div class="progress-point"></div>
+                        </div>
+
+                        <h3 class="help-credit__title d-block d-sm-none">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
+
+                        <h4 class="subtitle-quiz">Хорошо. Заполните ваши контакты и получите ваш одобренный кредит.</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active">
+                      <input type="tel" name="options"  >+7 (___) ___ - __ - __
+                    </label>
+
+
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offer position-relative d-none d-sm-block">
+                    <img class="big-woman position-absolute" src="./img/main/big-woman.png" alt="woman">
+                    <div class="offer__facts d-flex flex-column">
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block">Помогли взять более <span class="facts--block-size">15&nbsp000&nbsp000&nbsp000</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/bank.png" alt="">
+                            <p class="facts--block">Более 50 Банков партнеров</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/history.png" alt="">
+                            <p class="facts--block">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex align-items-center">
+                            <img class="block--little__images" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block">Без справок и поручителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer d-flex flex-column d-sm-none mx-auto mt-5">
+
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center justify-content-center mr-3">
+                            <img class="block--little__images mb-3" src="./img/main/take-money.png" alt="">
+                            <p class="facts--block m-0">Помогли взять <br> более <span class="facts--block-size">15млн</span> рублей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center">
+                            <img class="block--little__images mb-3" src="./img/main/bank.png" alt="">
+                            <p class="facts--block m-0">Более 50 Банков партнеров</p>
+                        </div>
+                    </div>
+                    <div class="offer-head d-flex">
+                        <div class="offer__facts--block d-flex flex-column align-items-center mr-3  mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/history.png" alt="">
+                            <p class="facts--block m-0">Одобрения даже с плохой кредитной историей</p>
+                        </div>
+
+                        <div class="offer__facts--block d-flex flex-column align-items-center mb-0">
+                            <img class="block--little__images mb-3" src="./img/main/no-problem.png" alt="">
+                            <p class="facts--block m-0 pt-2">Без справок и поручителей</p>
                         </div>
                     </div>
                 </div>
