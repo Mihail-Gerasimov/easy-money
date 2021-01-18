@@ -115,6 +115,16 @@ body {
     color: #000000;
 }
 
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow: inherit;
+    }
+}
+
 a,
 a:hover {
     color: #000000 !important;
@@ -258,6 +268,30 @@ button:focus {
     margin-bottom: 75px !important;
 }
 
+.big-quiz:last-child {
+    margin-top: 94px;
+}
+
+.big-quiz:last-child .choice {
+    margin-top: 120px;
+}
+
+.last-big {
+    left: 510px;
+    width: 580px;
+    top: -38px;
+}
+
+.blue-circle {
+    top: -50px;
+    right: -21px;
+}
+
+.red-circle {
+    bottom: 40px;
+    left: -40px;
+}
+
 .title-quiz {
     font-size: 23px;
     line-height: 26px;
@@ -358,7 +392,7 @@ button:focus {
     line-height: 46px;
     color: #2777D6;
     font-family: 'Gilroy-Black';
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .time-back {
@@ -366,7 +400,7 @@ button:focus {
     font-size: 24px;
     line-height: 29px;
     width: 455px;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 .btn-secondary {
@@ -383,7 +417,21 @@ button:focus {
     text-align: start;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: #2777D6;
+    border: 1px solid#2777D6;
+    outline: none;
+}
+
+.btn-secondary input {
+    background: #ffffff;
+    border: 1px solid#ffffff;
+    outline: none;
+}
+
+.btn-secondary input:hover {
+    color: #fff;
     background: #2777D6;
     border: 1px solid#2777D6;
     outline: none;
@@ -399,15 +447,16 @@ button:focus {
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {
     color: #fff !important;
-    background-color: #ffffff !important;
-    border-color: #ffffff !important;
+    background-color: #2777D6 !important;
+    border-color: #2777D6 !important;
     outline: none !important;
     box-shadow: none !important;
 }
 
-.btn-secondary input {
+
+/* .btn-secondary input {
     background-color: transparent;
-}
+} */
 
 .quiz-back {
     font-weight: bold;
