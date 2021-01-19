@@ -102,6 +102,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 html,
@@ -269,7 +270,8 @@ button:focus {
 }
 
 .big-quiz:last-child {
-    margin-top: 94px;
+    margin-top: 140px;
+    padding: 0 36px;
 }
 
 .big-quiz:last-child .choice {
@@ -277,14 +279,13 @@ button:focus {
 }
 
 .last-big {
-    left: 510px;
-    width: 580px;
-    top: -38px;
+    left: 490px;
+    top: -95px;
 }
 
 .blue-circle {
-    top: -50px;
-    right: -21px;
+    top: -36px;
+    right: -36px;
 }
 
 .red-circle {
