@@ -12,13 +12,62 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button pt-0 pb-0 type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span class="pr-4" aria-hidden="true">Закрыть</span>
+      </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="modal-body--content d-flex justify-content-between">
+                        <div class="modal-body--content__left">
+                            <h5 class="modal-title title-modal mb-3" id="staticBackdropLabel">Подать заявку!</h5>
+                            <p class="modal-body__text">
+                                Для получения кредита, оставьте номер телефона и ваше имя. Наш специалист расскажет вам все подробнее.
+                            </p>
+                            <form action="" class="d-flex flex-column mb-4">
+                                <input class="mb-4 pl-4 py-3 style-input" type="text" placeholder="Ваше Имя">
+                                <input class=" pl-4 py-3 style-input" type="text" placeholder="+7 (___) ___ - __ - __">
+                            </form>
+                            <label class="label-radio">
+                            <input type="checkbox" name="people-number " class="real-radio "> 
+                            <div class="custom-radio"><img src="./img/modal/chek.svg" alt=""></div>
+                            <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                        </label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary bg-pink">Подать заявку!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-thanks__grey position-absolute"></div>
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <img class="mb-5" src="./img/modal/green.png" alt="">
+            <h5 class="modal-title title-modal mb-5 text-center" id="staticBackdropLabel">Заявка<br>отправлена
+            </h5>
+            <p class="thanks__content--text">
+                Мы получили вашу заявку.<br>Наш менеджер свяжится с вами.
+            </p>
+        </div>
+        <div class="modal-thanks__pink position-absolute"></div>
+    </div>
+    <!-- modal -->
+
 
     <section class="header">
         <div class="container">
             <div class="header-block d-flex justify-content-between align-items-center align-content-center">
                 <img src="./img/header/logo.png" alt="" class="header-logo">
                 <h3 class="header-title d-none d-md-block">ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА</h3>
-                <button class="header-btn d-block p-0">Получить кредит</button>
+                <button class="header-btn d-block p-0" data-toggle="modal" data-target="#staticBackdrop">Получить кредит</button>
             </div>
         </div>
     </section>
@@ -27,7 +76,7 @@
         <section class="main">
             <div class="container">
 
-                <div class="big-quiz d-flex justify-content-between align-items-end" style="display: none !important;">
+                <div class="big-quiz d-flex justify-content-between align-items-end">
 
                     <div class="choice">
 
@@ -1033,7 +1082,7 @@
 
                 </div>
 
-                <div class="big-quiz d-flex justify-content-between align-items-start position-relative">
+                <div class="big-quiz d-flex justify-content-between align-items-start position-relative" style="display: none !important">
 
                     <div class="choice position-relative">
                         <img class="bbig-mobile position-absolute d-none" src="./img/main/last-bbig-mobile.png" alt="">
