@@ -46,6 +46,9 @@
         line-height: 28px;
         width: 530px;
     }
+    .input-tel {
+        width: 330px;
+    }
     .btn-secondary {
         width: 330px;
         font-size: 13px;
@@ -127,6 +130,9 @@
     .progress-point::after {
         width: 44px;
         left: -49px;
+    }
+    .input-tel {
+        width: 298px;
     }
     .btn-secondary {
         width: 298px;
@@ -218,6 +224,12 @@
         font-size: 20px;
         line-height: 26px;
         width: 480px;
+    }
+    .input-tel {
+        width: 240px;
+        padding: 15px 0 15px 10px !important;
+        font-size: 11px;
+        line-height: 18px;
     }
     .btn-secondary {
         width: 240px;
@@ -447,6 +459,14 @@
     .btn-group {
         margin: 0 auto 35px;
         height: auto;
+    }
+    .input-tel {
+        font-size: 14px;
+        line-height: 19px;
+        width: 310px;
+        padding: 15px 0 15px 10px !important;
+        margin-right: 0px !important;
+        margin-bottom: 10px !important;
     }
     .btn-secondary {
         font-size: 14px;

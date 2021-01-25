@@ -404,6 +404,44 @@ button:focus {
     margin-bottom: 90px;
 }
 
+input {
+    cursor: pointer !important;
+}
+
+.btn.focus {
+    box-shadow: none !important;
+}
+
+.input-tel {
+    background-color: #fff !important;
+    border: 1px solid #C6C6C6 !important;
+    color: gray !important;
+    outline: none;
+    width: 400px;
+    padding: 15px 0 15px 20px !important;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: start;
+    font-family: 'Gilroy-Regular';
+    cursor: pointer !important;
+}
+
+.input-tel:hover {
+    background-color: #fff !important;
+    border: 1px solid #C6C6C6 !important;
+    color: gray !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.input-tel:focus {
+    background-color: #fff !important;
+    border: 1px solid #C6C6C6 !important;
+    color: gray !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
 .btn-secondary {
     flex: inherit !important;
     font-weight: normal;
